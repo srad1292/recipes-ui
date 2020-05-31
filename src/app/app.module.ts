@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavLayoutComponent } from './shared/layouts/nav-layout/nav-layout.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
+import { MaterialModule } from './shared/modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { appRoutes } from './app.routes';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MaterialModule,
     RouterModule.forRoot(appRoutes),
   ],
   providers: [],
